@@ -5,7 +5,7 @@ const CODEFORCES_API = "https://codeforces.com/api/contest.list";
 
 export async function fetchCodeforcesContests(): Promise<Contest[]> {
   const res = await fetch(CODEFORCES_API, {
-    next: { revalidate: 0 }, // no caching for now
+    next: { revalidate: 0 }, 
   });
 
   if (!res.ok) {
