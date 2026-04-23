@@ -39,12 +39,16 @@ export function ContestCard({ contest }: { contest: Contest }) {
       description={
         <div className="space-y-1 text-sm text-gray-400">
           <p>
-            <span className="text-gray-500">Start:</span>{" "}
-            {startDate.toLocaleDateString()} at{" "}
-            {startDate.toLocaleTimeString([], {
-              hour: "2-digit",
-              minute: "2-digit",
-            })}
+             <span className="text-gray-500">Start:</span>{" "}
+  {startDate.toLocaleDateString("en-IN", {
+    timeZone: "Asia/Kolkata",
+  })}{" "}
+  at{" "}
+  {startDate.toLocaleTimeString("en-IN", {
+    timeZone: "Asia/Kolkata",
+    hour: "2-digit",
+    minute: "2-digit",
+  })}
           </p>
           <p>
             <span className="text-gray-500">Duration:</span>{" "}
