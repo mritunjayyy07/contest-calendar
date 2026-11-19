@@ -13,7 +13,7 @@ export  function Hero (){
           </h1>
 
           <p className="text-gray-400 max-w-xl mx-auto">
-            Track upcoming contests from Codeforces, LeetCode, and AtCoder
+            Track upcoming contests from Codeforces, LeetCode, Codechef and Atcoder
           </p>
 
           <div className="mt-8 animate-bounce text-gray-500">
